@@ -1,45 +1,129 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Delphin Soluções</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  /* background: linear-gradient(to bottom, #222222, #000000); */
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.logo {
+  /* background-color: red; */
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #38bdf8;
+}
+
+p {
+  font-size: 17px;
+  color: #000000;
+  font-weight: bold;
+  max-width: 500px;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.link-button {
+  width: 20%;
+  background-color: #e47c27;
+  color: #ffffff;
+  /* padding: 1rem; */
+  border: none;
+  border-radius: 0.75rem;
+  /* font-weight: 600; */
+  /* width: 100%; */
+  /* max-width: 10px; */
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(143, 143, 143, 0.2);
+  align-items: center;
+  justify-content: center;
+  height: 70px;
   
-</head>
-<body>
-  <img src="/WppBranco.png" alt="logo">
-  <p>Construindo o futuro da excelência empresarial: Tecnologia de ponta, experiência do cliente em primeiro lugar.</p>
-  
+}
 
-  <div class="container-button">
+.green {
+  background-color: rgb(18, 95, 48);
+}
 
-    <button class="link-button green" onclick="openLink('https://wa.me/+557581730277')">
-      <img src="/wpp.png" alt="icon-button" class="icon-button"/>
-    </button>
+.purple {
+  background-color: rgb(141, 17, 141);
+}
 
-    <button class="link-button purple" onclick="openLink('https://www.instagram.com/delphinsolucoes/')">
-      <img src="/instagram.png" alt="icon-button2" class="icon-button">
-    </button>
+.blue {
+  background-color: rgb(35, 98, 170);
+}
 
+.orange {
+  background-color: rgb(245, 92, 21);
+}
 
-    <button class="link-button blue" onclick="openLink('https://delphinsolucoes.com.br/')">
-      <img src="/site.png" alt="icon-button3" class="icon-button">
-    </button>
+.link-button:hover {
+  transform: scale(1.05);
+  font-weight: bold;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
 
+.container-button {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-    <button class="link-button orange" onclick="openLink('https://SEU_SITE_AQUI.com')">
-      <img src="/other.png" alt="icon-button" class="icon-button">
-    </button>
-  </div>
+footer {
+  margin-top: 3rem;
+  font-size: 0.75rem;
+  color: #64748b;
+}
 
-  <footer>&copy; 2025 Delphin Soluções. Todos os direitos reservados.</footer>
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
 
-  <script>
-    function openLink(url) {
-      window.open(url, '_blank');
-    }
-  </script>
-</body>
-</html>
+  p {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .link-button {
+    font-size: 0.95rem;
+    padding: 0.9rem;
+  }
+}
+img {
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    /* background-color: red; */
+    
+}
+
+.icon-button {
+  width: 35px;
+  height: 35px;
+  right: 100px;
+  left: 100px;
+}
+
+.container{
+  align-items: center;
+  justify-content: center;
+}
